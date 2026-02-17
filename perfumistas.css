@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+.encabezado {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 75px;  
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+}
+
+.encabezado-logo-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.encabezado-logo a {
+    font-size: 21px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.encabezado-imagen {
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    border: 2px solid white;
+    object-fit: cover;
+}
+
+.encabezado-menu {
+    display: flex;
+    gap: 12px;
+    margin-right: 30px;
+}
+
+.encabezado-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.desplegable {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: black;
+    list-style: none;
+    width: 140px;
+    top: 100%;
+    left: 0;
+    padding: 5px;
+    border: 1px solid dimgray;
+}
+
+.submenu li a {
+    padding: 3px;
+    display: block;
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+}
+
+.desplegable:hover .submenu {
+    display: block;
+}
+
+.submenu li a:hover {
+    background-color: dimgray;
+}
+
+.perfumistas-titulo {
+    margin: 4%;
+    font-size: 32px; 
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.perfumista-item {
+    width: 250px;
+    text-align: center;
+}
+
+.perfumista-imagen {
+    width: 100%;
+    height: 280px; 
+    background-color: whitesmoke;
+    border: 2px solid black;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.perfumista-nombre {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.perfumista-nombre:hover {
+    color: dimgray;
+}
+
+.perfumista-texto {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 14px;
+    color: black;
+}
+
+.perfumistas-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+    padding: 20px;
+    animation: entrada-suave 0.9s ease-out;
+}
+
+@keyframes entrada-suave {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.pie {
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    display: flex;              
+    justify-content: center;    
+    align-items: center;        
+    margin-top: 236px; 
+}
+
+@media (max-width: 1300px) {
+    .encabezado {
+        padding: 10px 15px;
+    }
+
+    .perfumistas-titulo {
+        font-size: 26px;
+        margin-bottom: 40px;
+    }
+
+    .perfumista-item {
+        width: 220px;
+    }
+}
+
+@media (max-width: 600px) {
+    .encabezado {
+        flex-direction: column;
+        height: auto; 
+        padding: 15px 10px;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .encabezado-logo-contenedor {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .encabezado-menu {
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .encabezado-menu a {
+        padding: 8px 0;
+        border-bottom: 1px solid dimgray;
+        width: 100%;
+        display: block;
+    }
+
+    .submenu {
+        position: static;
+        width: 100%;
+        border: none;
+        background-color: #0a0a0a;
+        padding: 5px 0;
+    }
+
+    .submenu li a {
+        padding: 8px;
+        color: #bbb;
+    }
+
+    .perfumista-item {
+        width: 80%;
+    }
+
+    .pie {
+        margin-top: 20px;
+    }
+}

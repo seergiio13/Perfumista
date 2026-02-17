@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;;
+}
+.encabezado {
+    background-color: #000;
+    color: white;
+    width: 100%;
+    height: 75px;  
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+            
+}
+
+
+.encabezado-logo-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.encabezado-logo a {
+    font-size: 21px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.encabezado-imagen {
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    object-fit: cover;
+}
+
+.encabezado-menu {
+    display: flex;
+    gap: 12px;
+    margin-right: 30px
+}
+
+.encabezado-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.desplegable {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    list-style: none;
+    width: 140px;
+    top: 100%;
+    left: 0;
+    padding: 5px;
+    border: 1px solid #444;
+}
+
+.submenu li a {
+    padding: 3px;
+    display: block;
+    font-size: 13px;
+    border-bottom: 1px solid #222;
+}
+
+.desplegable:hover .submenu {
+    display: block;
+}
+
+.submenu li a:hover {
+    background-color: #333;
+}
+.contenedor-titulo {
+    text-align: center;
+    padding: 15px;
+}
+
+.contenedor-titulo h1 {
+    margin-bottom: 8px;
+}
+
+.contenedor-consejos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    padding: 15px;
+}
+
+.tarjeta {
+    width: 250px;
+    border: 3px solid #000;
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+    margin: 10px;
+    animation: entrada-suave 0.9s ease-out;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid #000;
+    margin-bottom: 10px;
+}
+
+.tarjeta h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.tarjeta p {
+    font-size: 14px;
+    color: #555;
+}
+
+@keyframes entrada-suave {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.pie {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    display: flex;              
+    justify-content: center;    
+    align-items: center;        
+    margin-top: 374px;         
+}
+
+
+
+@media (max-width: 1300px) {
+
+    .encabezado {
+        padding: 10px 15px;
+    }
+
+    .tarjeta {
+        width: 45%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .encabezado {
+        flex-direction: column;
+        padding: 10px;
+        gap: 8px;
+    }
+
+    .encabezado-menu {
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+    }
+
+    .encabezado-menu a {
+        padding: 5px 0;
+        border-bottom: 1px solid #414141;
+    }
+
+    .tarjeta {
+        width: 90%;
+    }
+}

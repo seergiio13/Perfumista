@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+<header class="encabezado">
+    <div class="encabezado-logo-contenedor">
+        <img src="logo.png" class="encabezado-imagen">
+        <div class="encabezado-logo"><a href="index.html">PERFUMISTA</a></div>
+    </div>
+
+<nav class="encabezado-menu">
+    
+    <div class="desplegable">
+        <a href="#"> Perfumeria ▼</a>
+        <ul class="submenu">
+            <li><a href="familias olfativas.html">Familias</a></li>
+            <li><a href="perfumistas.html">Perfumistas</a></li>
+        </ul>
+    </div>
+
+    <a href="diccionario.html">Diccionario</a>
+    <a href="Contacto.html">Contacto</a>
+    <a href="sobre-nosotros.html">Nosotros</a>
+
+</nav>
+</header>
+
+
+<div class="contenido-contacto">
+        
+    <h1 class="contacto-titulo">Formulario para contactos y dudas</h1>
+
+    <form class="formulario-basico" action="#" method="post">
+        
+        <div class="campo">
+            <label>Nombre:</label>
+            <input type="text">
+        </div>
+
+        <div class="campo">
+            <label>Correo electrónico:</label>
+            <input type="email">
+        </div>
+
+        <div class="campo">
+            <label>Motivo de la consulta:</label>
+            <select name="motivo">
+                <option value="general">Información general</option>
+                <option value="pedido">Asesoramiento de perfumes</option>
+                <option value="reclamacion">Colaboraciones o negocios </option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label>¿Cómo prefieres que te respondamos?</label>
+            <div class="contenedor-opciones">
+                <label class="opcion-radio">
+                    <input type="radio" name="preferencia" value="email" checked> Email
+                </label>
+                <label class="opcion-radio">
+                    <input type="radio" name="preferencia" value="telefono"> Teléfono
+                </label>
+                <label class="opcion-radio">
+                    <input type="radio" name="preferencia" value="whatsapp"> WhatsApp
+                </label>
+            </div>
+        </div>
+
+        <div class="campo">
+            <label>Intereses (Marca los que quieras):</label>
+            <div class="contenedor-opciones">
+                <label class="opcion-check">
+                    <input type="checkbox" name="interes" value="nicho"> Perfumería Nicho
+                </label>
+                <label class="opcion-check">
+                    <input type="checkbox" name="interes" value="disenador"> Diseñador
+                </label>
+                <label class="opcion-check">
+                    <input type="checkbox" name="interes" value="arabe"> Perfumería Árabe
+                </label>
+            </div>
+        </div>
+
+        <div class="campo">
+            <label>Mensaje:</label>
+            <textarea rows="5"></textarea>
+        </div>
+
+        <div class="contenedor-botones">
+            <button type="submit" class="boton-enviar">Enviar Mensaje</button>
+            <button type="reset" class="boton-reset">Borrar Formulario</button>
+        </div>
+
+    </form>
+
+</div>
+
+<footer class="pie">
+    <p>© 2026 Perfumista</p>
+</footer>
+
+</body>
+</html>

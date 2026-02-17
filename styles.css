@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.encabezado {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 75px;  
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+}
+
+.encabezado-logo-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.encabezado-logo a {
+    font-size: 21px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.encabezado-imagen {
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    border: 2px solid white;
+    object-fit: cover;
+}
+
+.encabezado-menu {
+    display: flex;
+    gap: 12px;
+    margin-right: 30px;
+}
+
+.encabezado-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.desplegable {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: black;
+    list-style: none;
+    width: 140px;
+    top: 100%;
+    left: 0;
+    padding: 5px;
+    border: 1px solid dimgray;
+    z-index: 10;
+}
+
+.submenu li a {
+    padding: 3px;
+    display: block;
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+}
+
+.desplegable:hover .submenu {
+    display: block;
+}
+
+.submenu li a:hover {
+    background-color: dimgray;
+}
+
+.slider-marco {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-imagenes {
+    display: flex;
+    width: 500%; 
+    animation: sliderAnimacion 15s infinite;
+}
+
+.slider-imagenes img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+@keyframes sliderAnimacion {
+    0%   { margin-left: 0; }
+    15%  { margin-left: 0; }
+    20%  { margin-left: -100%; }
+    35%  { margin-left: -100%; }
+    40%  { margin-left: -200%; }
+    55%  { margin-left: -200%; }
+    60%  { margin-left: -300%; }
+    75%  { margin-left: -300%; }
+    80%  { margin-left: -400%; }
+    95%  { margin-left: -400%; }
+    100% { margin-left: 0; }
+}
+
+.inicio {
+    display: flex;          
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding: 25px;
+    animation: entrada-suave 0.9s ease-out;
+}
+
+.inicio-tarjeta {
+    width: 500px;
+    background: white;
+    padding: 20px;
+    border: 3px solid black;
+    text-align: center;
+}
+
+.inicio-imagen {
+    width: 100%;
+    height: 180px;
+    background: whitesmoke;
+    object-fit: cover;
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+
+.inicio-tarjeta h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.inicio-boton {
+    display: inline-block;
+    padding: 10px;
+    background: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.inicio-boton:hover {
+    background: dimgray;
+}
+
+@keyframes entrada-suave {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.pie {
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    display: flex;              
+    justify-content: center;    
+    align-items: center;        
+    margin-top: auto;
+}
+
+@media (max-width: 1300px) {
+    .encabezado {
+        padding: 10px 15px;
+    }
+
+    .slider-marco, .slider-imagenes img {
+        height: 380px;
+    }
+
+    .inicio {
+        gap: 60px;
+    }
+
+    .inicio-tarjeta {
+        width: 420px;
+    }
+}
+
+@media (max-width: 600px) {
+    .encabezado {
+        flex-direction: column;
+        height: auto; 
+        padding: 15px;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .encabezado-logo-contenedor {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .encabezado-menu {
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .encabezado-menu a {
+        padding: 10px 0;
+        border-bottom: 1px solid dimgray;
+        width: 100%;
+        display: block;
+    }
+
+    .submenu {
+        position: static;
+        width: 100%;
+        border: none;
+        background-color: #0a0a0a;
+        padding: 5px 0;
+    }
+
+    .submenu li a {
+        padding: 8px 0;
+        color: #bbb;
+    }
+
+    .slider-marco {
+        display: none;
+    }
+
+    .inicio {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .inicio-tarjeta {
+        width: 100%;
+        max-width: 350px;
+    }
+}

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org">
+
+   <!-- Página de Inicio -->
+   <url>
+      <loc>https://miweb.com/index.html</loc>
+      <lastmod>2026-02-16</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>1.0</priority>
+   </url>
+
+   <!-- Familias Olfativas -->
+   <url>
+      <loc>https://miweb.com/familias%20olfativas.html</loc>
+      <lastmod>2026-02-16</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.9</priority>
+   </url>
+
+   <!-- Perfumistas -->
+   <url>
+      <loc>https://miweb.com/perfumistas.html</loc>
+      <lastmod>2026-02-16</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.9</priority>
+   </url>
+
+   <!-- Diccionario -->
+   <url>
+      <loc>https://miweb.com/diccionario.html</loc>
+      <lastmod>2026-02-16</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.9</priority>
+   </url>
+
+   <!-- Consejos -->
+   <url>
+      <loc>https://miweb.com/consejos.html</loc>
+      <lastmod>2026-02-16</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+
+   <!-- Sobre Nosotros -->
+   <url>
+      <loc>https://miweb.com/sobre-nosotros.html</loc>
+      <lastmod>2026-02-16</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+   </url>
+
+   <!-- Contacto -->
+   <url>
+      <loc>https://miweb.com/Contacto.html</loc>
+      <lastmod>2026-02-16</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+   </url>
+
+   <!-- Categoría Nicho -->
+   <url>
+      <loc>https://miweb.com/categoria-nicho.html</loc>
+      <lastmod>2026-02-16</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+   </url>
+
+   <!-- Categoría Diseñador -->
+   <url>
+      <loc>https://miweb.com/categoria-Diseñador.html</loc>
+      <lastmod>2026-02-16</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+   </url>
+
+   <!-- Categoría Árabe -->
+   <url>
+      <loc>https://miweb.com/categoria-Arabe.html</loc>
+      <lastmod>2026-02-16</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+   </url>
+
+</urlset>
